@@ -5,8 +5,6 @@ const bodyParser = require("body-parser")
 const cors = require("cors")
 const serverless = require("serverless-http")
 const app = express()
-const dotenv = require("dotenv")
-dotenv.config()
 
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
